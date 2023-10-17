@@ -1,0 +1,1114 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('backpiece.png');
+    
+}
+.floating-image1,.floating-image2,.floating-image3{
+    position: absolute;
+    z-index: 2;
+    opacity: .9;
+}
+.floating-image2{
+    opacity: .5;
+}
+.floating-image1{
+    top: 220%;
+    left: 70%;
+}
+.floating-image2{
+    top: 170%;
+    left: 20%;
+    margin-top: 1000px;
+}
+.floating-image3{
+    top: 260%;
+    left: 20%;
+}
+.floating-image1 img{
+    width: 250px;
+    height: auto;
+    z-index: 3;
+    
+}
+.floating-image3 img{
+    width: 250px;
+    z-index: 2;
+}
+.floating-image2 img{
+    width: auto;
+    height: 500px;
+}
+
+:root{
+    font-family: 'Nova Flat';
+}
+.rotate-logo {
+    display: flex;
+    width: 100px;
+    height: auto;
+    position: fixed;
+    top: 5%;
+    left: 90%;
+    z-index: 3;
+    
+}
+
+.rotate-logo img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: contain;
+    
+}
+
+.page1{
+    display: flex;
+    width: auto;
+    height: 100vh;
+    background-color: #ad9664;
+    padding: 20px;
+    flex-direction: column;
+}
+.portraitscript-wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 65%;
+    margin-top: -20px;
+}
+.page2{
+    display: flex;
+    width: auto;
+    height: 100vh;
+    background-color: #e5e4d2;
+    padding: 0;
+    flex-direction: column;
+    
+}
+.upper-container {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    position: relative; /* Add relative positioning to act as a container for absolute positioned elements */
+}
+
+.hiddenImage1 {
+    display: flex;
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    top: 30%; /* Adjust top position */
+    left: 10%; /* Adjust left position */
+    transform: translate(-50%, -50%); /* Center the element */
+    z-index: 4;
+}
+
+.secondary-image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    
+    position: relative; /* Add relative positioning */
+    margin-top: 75px;
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+.secondary-image img{
+    display: flex;
+    width: 100%;
+    
+    object-fit: contain;
+}
+.second-text{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    height: 60%;
+    color: #cd7b38;
+    position: relative;
+    margin-top: 60px;
+    z-index: 1;
+    font-size: 34px;
+    align-items: center;
+}
+.hiddenImage2 {
+    display: flex;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    bottom: 10%; /* Adjust bottom position */
+    right: 10%; /* Adjust right position */
+    
+    justify-content: center;
+}
+
+
+
+.page3{
+    width: auto;
+    height: 200vh;
+    
+    padding: 0;
+}
+.half-box{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: rgba(20, 20, 24, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.half-title{
+    font-size: 82px;
+    color: #ffc7d9;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+    text-shadow: 
+    -1px -1px 0 #ffc7d9,
+    1px -1px 0 #ffc7d9,
+    -1px 1px 0 #ffc7d9,
+    1px 1px 0 #ffc7d9;
+}
+.page1title {
+    display: flex;
+    width: 70%;
+    height: 30%;
+    margin-left: 40px;
+    flex-direction: column;
+    z-index: 2;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.title1, .title2 {
+    opacity: 0;
+    display: flex;
+    width: 100%; /* Make sure titles take 100% width */
+    height: 50%;
+    align-items: center;
+    font-size: 120px;
+    letter-spacing: .5ch;
+    margin: 0; /* Reset margin */
+    padding: 10px;
+    font-family: 'Nova Flat';
+    font-weight: bold;
+}
+.title2{
+    text-shadow: 
+    -1px -1px 0 #ad9664,
+    1px -1px 0 #ad9664,
+    -1px 1px 0 #ad9664,
+    1px 1px 0 #ad9664;
+}
+.selfportrait{
+    display:flex;
+    opacity: 0;
+    width: auto;
+    height: 80%;
+    background-color: black;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+.selfportrait img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.page1script{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    flex-direction: column;
+    opacity: 0;
+    border-top: 1px solid black;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.script1,.script2{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex: 1;
+    font-size: 38px;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 2px;
+    font-weight: bold;
+}
+.script1{
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.script2{
+    margin-top:4px;
+}
+.serpent {
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin-top: auto;
+    align-items: flex-end; /* Align items to the flex-end (bottom) */
+    opacity: 0;
+}
+.serpent img {
+    display: flex;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    object-fit: contain;
+}
+.serpentscript-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.page4-decoration{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-image: url(pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: -2px;
+}
+.page4 {
+    height: 200vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #e5e4d2;
+    flex-direction: column;
+  }
+
+
+
+  .carousel-container {
+    display: flex;
+    width: 80%;
+    background-color: #141418;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.tatimg {
+    flex: 0 0 100%; /* Ensure each image takes full width */
+    transition: transform 0.5s; /* Add a smooth transition effect */
+}
+
+.tatimg img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Make the image fill the container */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.active {
+    transform: translateX(0); /* Show the active slide */
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.nav-button-right,
+.nav-button-left {
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 1px solid black;
+}
+.nav-button-left,.nav-button-right{
+    height: 100px;
+    border: none;
+}
+.nav-button-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scaleX(-1); /* Flip image on Y-axis */
+    
+}
+.nav-button-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.carousel-upper-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+    height: 15%;
+    width: 100%;
+}
+.carousel-img-left,.carousel-img-right{
+display: flex;
+height: 60%;
+width: 20%;
+margin: 0;
+padding: 0;
+justify-content: center;
+}
+.carousel-img-right img,.carousel-img-left img{
+    width: auto;
+    height: 100%;
+    justify-content: center;
+}
+.carousel-title{
+    display: flex;
+    font-size: 82px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.tatimg{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.tatimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: .5;
+}
+.slide {
+    display: none;
+    height: 100%;
+    width: 33%; /* Set the width to 33% for three equal-sized slides */
+    
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    position: relative; /* Add relative positioning */
+    padding: 20px;
+}
+
+.slide img {
+    object-fit: cover; /* Ensure the image covers the entire container */
+    width: 100%;
+    height: 100%;
+    display: block; /* Make sure the image is a block element */
+    background-color: #141418;
+}
+
+
+.active-slide {
+    display: flex;
+}
+
+.slide:nth-child(3) {
+    margin-right: 0; /* Remove margin from the third slide to allow it to overflow */
+}
+
+
+.button-container button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #141418; /* Green background color */
+    color: white; /* White text color */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 10px; /* Add some space between buttons */
+}
+
+.button-container button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+.merch-container{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 90px;
+    justify-content: center;
+    align-items: center;
+}
+.merch-title{
+    display: flex;
+    border-bottom: 1px solid #141418;
+}
+.merch-wrapper{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    
+}
+.merch1-wrapper,.merch2-wrapper,.merch3-wrapper{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid #141418;
+    padding-right: 4px;
+}
+.merch1{
+    display: flex;
+    width: 90%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    background-color: #cd7b38;
+}
+.merch1 img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.merch1script{
+    display: flex;
+    width: 90%;
+    height: 20%;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #141418;
+}
+.sub-title{
+    display: flex;
+    font-size: 32px;
+    border-bottom: 1px solid #141418;
+    margin-top: 10px;
+}
+.sub-text{
+ display: flex;
+ font-size: 18px;
+ justify-content: center;
+ text-align: center;
+ margin-bottom: 10px;
+}
+.merch2script{
+    display: flex;
+    width: 90%;
+    height: 20%;
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #141418;
+}
+/* Add these styles to your external CSS file */
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #e5e4d2;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 40%; /* Adjust the value to move the menu below the logo */
+    left: 76%;
+    z-index: 9999;
+}
+.default-nico{
+    display: flex;
+}
+.menu a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+.rotate-wrapper{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    z-index: 9999;
+    
+}
+.rotate-logo {
+    cursor: pointer;
+    position: fixed;
+    top: 5%;
+    left: 90%;
+    z-index: 9999;
+}
+
+.rotate-logo img {
+    width: 100px;
+}
+.page5toggle {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #141418;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #ad9664;
+}
+
+.page5toggle button {
+    background: none;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.page5toggle button:hover {
+    color: #FF5733; /* Change to the color you want on hover */
+    /* Add any other styles you want on hover */
+}
+
+.page5{
+    display: flex;
+    justify-content: center;
+    height: 200vh;
+    width: 100%;
+    background-color: rgb(209, 115, 115);
+}
+
+.form-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+.wufoo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgb(202, 88, 13);
+    overflow: auto;
+    justify-content: center;
+}
+.form-script{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 1px solid #45a049;
+    background-color: #ad9664;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+}
+.months {
+    display: flex;
+    width: 80%;
+    height: 10%;
+    background-color: #e5e4d2;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.month-title{
+    display: flex;
+    width: 60%;
+    height: 80%;
+    font-size: 42px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .3ch;
+    text-transform: uppercase;
+}
+.arrow-left,.arrow-right{
+    width: 20%;
+    display: flex;
+    height: 100%;
+    background: none;
+    border: none;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.calendar-wrapper{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Create 7 equal columns */
+    width: 95%;
+    height: 30%;
+    
+}
+.day{
+    font-size: 24px;
+    border: 1px solid #141418;
+    margin: 2px;
+    background-color: #e5e4d2;
+    height: 90%;
+}
+#d1 {
+    
+    background-color: red; /* Your desired background color for day with id d1 */
+}
+
+
+
+
+/*carousel test*/
+
+.page6{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.side-pattern-left{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: url(sideChecker.png);
+    background-size: cover;
+    left: 0;
+}
+.side-pattern-right{
+    display: flex;
+    width: 100px;
+    position: absolute;
+    height: 100%;
+    background-image: url(sideChecker.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 0;
+}
+.social-title{
+    display: flex;
+    color: #ffc7d9;
+    
+    height: 30%;
+    width: 50%;
+    margin-top: 40px;
+    flex-direction: column;
+    
+}
+
+.soc-title1{
+    
+    height: 50%;
+    font-size: 120px;
+    letter-spacing: .3ch;
+}
+.soc-title2{
+    
+    height: 50%;
+    font-size: 120px;
+    letter-spacing: .3ch;
+    text-align: end;
+}
+.media-container{
+    display: flex;
+    width: 80%;
+    height: 200px;
+    margin-top: 50px;
+    color: #ffc7d9;
+    align-items: center;
+    border-bottom: 1px solid #ffc7d9;
+}
+
+.insta{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+}
+.insta img{
+    width: 10%;
+    height: 10%;
+}
+  
+
+@media screen and (max-width: 600px) {
+    .rotate-wrapper{
+        display: flex;
+        height: 100px;
+    }
+   
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #e5e4d2;
+        min-width: 180px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        top: 65%; /* Adjust the value to move the menu below the logo */
+        left: 50%;
+        z-index: 9999;
+    }
+    .page4 {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        background-color: #e5e4d2;
+        flex-direction: column;
+      }
+    .carousel-upper-wrap{
+        flex-direction: row;
+        height: 20%;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .carousel-img-right{
+        display: flex;
+        height: 100%;
+        width: 30%;
+    }
+   .carousel-img-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   }
+    
+    .carousel-img-left{
+        display: flex;
+        height: 100%;
+        width: 30%;
+    }
+    .carousel-img-left img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .carousel-title{
+        font-size: 24px;
+        width: 100%;
+        height: 40%;
+        z-index: 2;
+        text-shadow: 
+    -1px -1px 0 #e5e4d2,
+    1px -1px 0 #e5e4d2,
+    -1px 1px 0 #e5e4d2,
+    1px 1px 0 #e5e4d2;
+    }
+    .carousel-container {
+        display: flex;
+        width: 90%;
+        background-color: #141418;
+        overflow: hidden; /* Hide any overflow */
+    }
+    
+    .tatimg {
+        flex: 0 0 100%; /* Ensure each image takes full width */
+        transition: transform 0.5s; /* Add a smooth transition effect */
+    }
+    
+    .tatimg img {
+        width: 100%; /* Make the image fill the container */
+        height: auto; /* Make the image fill the container */
+        object-fit: cover; /* Ensure the image covers the entire container */
+    }
+    
+    .active {
+        transform: translateX(0); /* Show the active slide */
+    }
+    
+    .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .nav-button-right,
+    .nav-button-left {
+        cursor: pointer;
+        font-size: 30px;
+        margin-right: 40px;
+        margin-left: 40px;
+        border: 1px solid black;
+    }
+    .nav-button-left,.nav-button-right{
+        height: 100px;
+        border: none;
+    }
+    .nav-button-left img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transform: scaleX(-1); /* Flip image on Y-axis */
+        
+    }
+    .nav-button-right img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .merch-container{
+        display: flex;
+        width: 100%;
+        height: 5%;
+        background-color: #141418;
+        margin: 0;
+        margin-top: 100px;
+    }
+    .merch-title{
+        font-size: 24px;
+        margin: 0;
+        color: #e5e4d2;
+    }
+    .merch-wrapper{
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+    }
+    .merch1-wrapper,.merch2-wrapper,.merch3-wrapper{
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+    }
+    .merch2-wrapper{
+        flex-direction: column-reverse;
+    }
+    .merch1-wrapper{
+        justify-content: flex-start;
+        
+    }
+    .merch1{
+        display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    background-color: #cd7b38;
+    }
+    .merch2script{
+        margin-top: 10px;
+        height: auto;
+    }
+    .sub-title{
+        font-size: 16px;
+    }
+    .sub-text{
+        font-size: 14px;
+    }
+    .social-title{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .soc-title1,.soc-title2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .media-container{
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        background-size: contain;
+        background-position: center;
+        background-color: #141418;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url('backpiece.png');
+        
+    }
+    .portraitscript-wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 75%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .selfportrait{
+        display:flex;
+        width: 100%;
+        height: 50%;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .selfportrait img{
+        display: none;
+        width: 100%;
+        min-width: 100%;
+        
+    }
+    .second-text{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        color: #cd7b38;
+        margin-top: 10px;
+        margin-left: 10px;
+        z-index: 1;
+        font-size: 26px;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-bottom: 100px;
+        text-shadow: 
+    -1px -1px 0 #e5e4d2,
+    1px -1px 0 #e5e4d2,
+    -1px 1px 0 #e5e4d2,
+    1px 1px 0 #e5e4d2;
+    }
+    .hiddenImage1 {
+        display: flex;
+        height: 150px;
+        width: 100px;
+        position: absolute;
+        top: 10%; /* Adjust top position */
+        left: 10%; /* Adjust left position */
+        transform: translate(-50%, -50%); /* Center the element */
+        z-index: 4;
+    }
+    .hiddenImage2 {
+        display: flex;
+        height: 300px;
+        width: 600px;
+        position: absolute;
+        bottom: 10%; /* Adjust bottom position */
+        left: 10%; /* Adjust right position */
+        
+        justify-content: center;
+    }
+    
+    .upper-container{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .secondary-image {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        position: relative; /* Add relative positioning */
+        margin-top: 75px;
+        z-index: 1; /* Ensure it's above other elements */
+    }
+    .secondary-image img{
+        display: flex;
+        width: 100%;
+        
+        object-fit: contain;
+    }
+    .page1{
+        display: flex;
+        width: auto;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+    .page1script{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .script1,.script2{
+        font-size: 22px
+    }
+    
+    .portraitscript-wrapper img {
+        display: flex;
+        width: 50%;
+    }
+    .serpentscript-wrapper{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .serpentscript-wrapper img{
+        display: flex;
+        width: 100%;
+    }
+    .serpent{
+        display: flex;
+    height: auto;
+    
+    width: auto;
+    margin-top: auto;
+    align-items: flex-end; /* Align items to the flex-end (bottom) */
+    justify-content: center;
+    
+    }
+    .rotate-logo{
+        display: flex;
+        width: 30px;
+        height: 50px;
+        position: fixed;
+        top: 2%;
+        left: 80%;
+        z-index: 3;
+    }
+    .rotate-logo img{
+        width: 75px;
+    }
+    .page1title{
+        display: flex;
+        height: 15%;
+        margin-left: 0;
+        padding: 0;
+        
+    }
+    .title1,.title2{
+        font-size: 50px;
+    }
+    .half-box{
+        align-items: start;
+    }
+    .half-title{
+        font-size: 42px;
+        margin-top: 20px;
+        
+    }
+    .page4-decoration{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        background-image: url(pattern.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        margin-bottom: -2px;
+    }
+    .floating-image1{
+        top: 190%;
+        left: 50%;
+    }
+    .floating-image2{
+        display: none;
+    }
+    .floating-image3{
+        top: 240%;
+        left: 20%;
+    }
+    .floating-image1 img, .floating-image3 img{
+        width: 150px;
+    }
+}
