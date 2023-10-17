@@ -4,11 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
   }
-  html{
-    background-color: #45a049;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
+ 
 body {
     background-size: cover;
     background-repeat: no-repeat;
