@@ -87,7 +87,7 @@ body {
 .page2{
     display: flex;
     width: auto;
-    height: 100vh;
+    height: 120vh;
     background-color: #e5e4d2;
     padding: 0;
     flex-direction: column;
