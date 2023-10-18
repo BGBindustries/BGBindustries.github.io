@@ -1,18 +1,19 @@
 html, body {
     height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
   }
- 
+footer{
+    display: flex;
+    color: wheat;
+    justify-content: center;
+}
 body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url('backpiece.png');
-    
+    background-color: #292931;
+    width: 100%;
 }
 .floating-image1,.floating-image2,.floating-image3{
+    display: flex;
     position: absolute;
     z-index: 2;
     opacity: .9;
@@ -34,6 +35,7 @@ body {
     left: 20%;
 }
 .floating-image1 img{
+    display: flex;
     width: 250px;
     height: auto;
     z-index: 3;
@@ -52,13 +54,12 @@ body {
     font-family: 'Nova Flat';
 }
 .rotate-logo {
-    display: flex;
+    display: none;
+    
     width: 100px;
     height: auto;
-    position: fixed;
-    top: 5%;
-    left: 90%;
     z-index: 3;
+    margin-left: auto;
     
 }
 
@@ -71,7 +72,7 @@ body {
 
 .page1{
     display: flex;
-    width: 100%;
+    width: auto;
     height: 100vh;
     background-color: #ad9664;
     padding: 20px;
@@ -144,7 +145,7 @@ body {
     display: flex;
     height: 300px;
     width: 600px;
-    position: absolute;
+    
     bottom: 10%; /* Adjust bottom position */
     right: 10%; /* Adjust right position */
     
@@ -168,7 +169,7 @@ body {
     align-items: center;
 }
 .half-title{
-    font-size: 82px;
+    font-size: 62px;
     color: #ffc7d9;
     justify-content: center;
     align-items: center;
@@ -182,7 +183,7 @@ body {
 }
 .page1title {
     display: flex;
-    width: 70%;
+    width: 75%;
     height: 30%;
     margin-left: 40px;
     flex-direction: column;
@@ -195,10 +196,10 @@ body {
 .title1, .title2 {
     opacity: 0;
     display: flex;
-    width: 100%; /* Make sure titles take 100% width */
+    width: auto; /* Make sure titles take 100% width */
     height: 50%;
     align-items: center;
-    font-size: 120px;
+    font-size: 102px;
     letter-spacing: .5ch;
     margin: 0; /* Reset margin */
     padding: 10px;
@@ -247,7 +248,7 @@ body {
     height: 100px;
     width: 100%;
     flex: 1;
-    font-size: 38px;
+    font-size: 32px;
     align-items: center;
     text-transform: uppercase;
     margin: 2px;
@@ -378,7 +379,7 @@ justify-content: center;
 }
 .carousel-title{
     display: flex;
-    font-size: 82px;
+    font-size: 12px;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -446,7 +447,7 @@ justify-content: center;
     width: 100%;
     margin-top: 200px;
     text-align: center;
-    font-size: 90px;
+    font-size: 12px;
     justify-content: center;
     align-items: center;
 }
@@ -521,14 +522,15 @@ justify-content: center;
 
 .menu {
     display: none;
-    position: absolute;
     background-color: #e5e4d2;
     min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    top: 40%; /* Adjust the value to move the menu below the logo */
-    left: 76%;
+    height: 100px;
     z-index: 9999;
+    position: fixed;
+    left: 80%;
+    top: 10%;
+    
 }
 .default-nico{
     display: flex;
@@ -541,17 +543,19 @@ justify-content: center;
 }
 .rotate-wrapper{
     display: flex;
-    width: 100%;
-    height: 200px;
-    position: fixed;
+    background-color: #ad9664;
+    width: auto;
+    height: 10px;
+    align-items: center;
     z-index: 9999;
     
 }
 .rotate-logo {
-    cursor: pointer;
+    display: flex;
     position: fixed;
+    cursor: pointer;
     top: 5%;
-    left: 90%;
+    left: 70%;
     z-index: 9999;
 }
 
@@ -710,13 +714,13 @@ justify-content: center;
 .soc-title1{
     
     height: 50%;
-    font-size: 120px;
+    font-size: 12px;
     letter-spacing: .3ch;
 }
 .soc-title2{
     
     height: 50%;
-    font-size: 120px;
+    font-size: 12px;
     letter-spacing: .3ch;
     text-align: end;
 }
@@ -745,7 +749,7 @@ justify-content: center;
 @media screen and (max-width: 600px) {
     .rotate-wrapper{
         display: flex;
-        height: 100px;
+        height: 1px;
         width: auto;
     }
    
@@ -756,7 +760,7 @@ justify-content: center;
         min-width: 180px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-        top: 65%; /* Adjust the value to move the menu below the logo */
+        top: 9%; /* Adjust the value to move the menu below the logo */
         left: 50%;
         z-index: 9999;
     }
@@ -954,7 +958,7 @@ justify-content: center;
         align-items: center;
     }
     .selfportrait img{
-        display: none;
+        display: flex;
         width: 100%;
         min-width: 100%;
         
@@ -962,10 +966,10 @@ justify-content: center;
     .second-text{
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 75%;
         height: auto;
         color: #cd7b38;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 10px;
         z-index: 1;
         font-size: 26px;
@@ -991,16 +995,17 @@ justify-content: center;
     .hiddenImage2 {
         display: flex;
         height: 300px;
-        width: 600px;
+        width: auto;
         position: absolute;
-        bottom: 10%; /* Adjust bottom position */
-        left: 10%; /* Adjust right position */
+        bottom: 0%; /* Adjust bottom position */
+        left: 20%; /* Adjust right position */
         
         justify-content: center;
     }
     
     .upper-container{
         width: 100%;
+        height: auto;
         justify-content: center;
         flex-direction: column;
     }
@@ -1071,7 +1076,7 @@ justify-content: center;
         height: 50px;
         position: fixed;
         top: 2%;
-        left: 10%;
+        left: 80%;
         z-index: 3;
     }
     .rotate-logo img{
@@ -1084,8 +1089,11 @@ justify-content: center;
         padding: 0;
         
     }
-    .title1,.title2{
-        font-size: 50px;
+    .title2{
+        font-size: 60px;
+    }
+    .title1{
+        font-size: 70px;
     }
     .half-box{
         align-items: start;
