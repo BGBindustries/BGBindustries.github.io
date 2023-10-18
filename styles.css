@@ -58,6 +58,7 @@ body {
 
 :root{
     font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
 }
 .rotate-logo {
     display: none;
