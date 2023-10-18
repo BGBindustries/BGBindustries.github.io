@@ -81,7 +81,8 @@ body {
     display: flex;
     width: auto;
     height: 100vh;
-    background-color: #ad9664;
+    background-color: #fffbe8;
+    color: #242524;
     padding: 20px;
     flex-direction: column;
 }
@@ -95,7 +96,8 @@ body {
     display: flex;
     width: auto;
     height: 120vh;
-    background-color: #e5e4d2;
+    background-color: #242524;
+    color: #fffbe8;
     padding: 0;
     flex-direction: column;
     
@@ -141,7 +143,7 @@ body {
     justify-content: center;
     width: 25%;
     height: 60%;
-    color: #cd7b38;
+    color: #fffbe8;
     position: relative;
     margin-top: 60px;
     z-index: 1;
@@ -164,7 +166,7 @@ body {
 .page3{
     width: auto;
     height: 100vh;
-    
+
     padding: 0;
 }
 .half-box{
@@ -177,21 +179,21 @@ body {
 }
 .half-title{
     font-size: 62px;
-    color: #ffc7d9;
+    color: #fffbe8;
     justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 3;
     text-shadow: 
-    -1px -1px 0 #ffc7d9,
-    1px -1px 0 #ffc7d9,
-    -1px 1px 0 #ffc7d9,
-    1px 1px 0 #ffc7d9;
+    -1px -1px 0 #fffbe8,
+    1px -1px 0 #fffbe8,
+    -1px 1px 0 #fffbe8,
+    1px 1px 0 #fffbe8;
 }
 .page1title {
     display: flex;
-    width: 75%;
-    height: 30%;
+    width: 100%;
+    height: auto;
     margin-left: 40px;
     flex-direction: column;
     z-index: 2;
@@ -217,7 +219,7 @@ body {
     opacity: 0;
     display: flex;
     width: auto; /* Make sure titles take 100% width */
-    height: 50%;
+    height: 100%;
     align-items: center;
     font-size: 102px;
     letter-spacing: .5ch;
@@ -228,10 +230,10 @@ body {
 }
 .title2{
     text-shadow: 
-    -1px -1px 0 #ad9664,
-    1px -1px 0 #ad9664,
-    -1px 1px 0 #ad9664,
-    1px 1px 0 #ad9664;
+    -1px -1px 0 #fffbe8,
+    1px -1px 0 #fffbe8,
+    -1px 1px 0 #fffbe8,
+    1px 1px 0 #fffbe8;
 }
 .selfportrait{
     display:flex;
@@ -317,7 +319,7 @@ body {
     display: flex;
     align-items: center;
     justify-items: center;
-    background-color: #e5e4d2;
+    background-color: #fffbe8;
     flex-direction: column;
   }
 
@@ -349,14 +351,15 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    border: 1px solid #242529;
+    width: 100%;
+    height: 50px;
 }
 
 .nav-button-right,
 .nav-button-left {
     cursor: pointer;
     font-size: 30px;
-    margin-right: 40px;
-    margin-left: 40px;
     border: 1px solid black;
 }
 .nav-button-left,.nav-button-right{
@@ -988,7 +991,7 @@ justify-content: center;
         justify-content: center;
         width: 75%;
         height: auto;
-        color: #cd7b38;
+        color: #fffbe8;
         margin-top: 20px;
         margin-left: 10px;
         z-index: 1;
@@ -997,10 +1000,7 @@ justify-content: center;
         padding-left: 10px;
         padding-bottom: 100px;
         text-shadow: 
-    -1px -1px 0 #e5e4d2,
-    1px -1px 0 #e5e4d2,
-    -1px 1px 0 #e5e4d2,
-    1px 1px 0 #e5e4d2;
+    
     }
     .hiddenImage1 {
         display: flex;
@@ -1104,16 +1104,18 @@ justify-content: center;
     }
     .page1title{
         display: flex;
-        height: 15%;
+        height: auto;
+        width: 100%;
         margin-left: 0;
         padding: 0;
         
     }
     .title2{
-        font-size: 50px;
+        
+        font-size: 40px;
     }
     .title1{
-        font-size: 20px;
+        font-size: 30px;
     }
     .half-box{
         align-items: start;
@@ -1141,7 +1143,7 @@ justify-content: center;
         display: none;
     }
     .floating-image3{
-        top: 270%;
+        top: 250%;
         left: 20%;
     }
     .floating-image1 img, .floating-image3 img{
