@@ -1224,3 +1224,13 @@ justify-content: center;
         width: 150px;
     }
 }
+
+
+@media screen and (max-height: 400px) {
+    .page1,.page2,.page3,.page4,.socialmedia{
+        height: 300vh;
+    }
+    .hiddenImage2{
+        display: none;
+    }
+}
