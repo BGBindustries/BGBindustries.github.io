@@ -1057,7 +1057,7 @@ justify-content: center;
     }
     .hiddenImage2 {
         display: flex;
-        height: 200px;
+        height: 300px;
         width: 50px;
         position: absolute;
         bottom: 0%; /* Adjust bottom position */
