@@ -80,7 +80,7 @@ body {
 
 .page1{
     display: flex;
-    width: auto;
+    width: 100%;
     height: 100vh;
     background-color: #fffbe8;
     color: #242524;
@@ -95,7 +95,7 @@ body {
 }
 .page2{
     display: flex;
-    width: auto;
+    width: 100%;
     height: 120vh;
     background-color: #242524;
     color: #fffbe8;
@@ -168,7 +168,7 @@ body {
 
 
 .page3{
-    width: auto;
+    width: 100%;
     height: 100vh;
 
     padding: 0;
@@ -318,7 +318,7 @@ body {
     margin-bottom: -2px;
 }
 .page4 {
-    height: 200vh;
+    height: auto;
     width: 100%;
     margin: 0;
     display: flex;
@@ -333,6 +333,7 @@ body {
   .carousel-container {
     display: flex;
     width: 80%;
+    height: 500px;
     background-color: #141418;
     overflow: hidden; /* Hide any overflow */
 }
@@ -388,7 +389,7 @@ padding: 0;
 justify-content: center;
 }
 .carousel-img-right img,.carousel-img-left img{
-    width: auto;
+    width: 100%;
     height: 100%;
     justify-content: center;
 }
@@ -475,66 +476,85 @@ justify-content: center;
     display: flex;
     width: 100%;
     height: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
     
 }
-.merch1-wrapper,.merch2-wrapper,.merch3-wrapper{
+.merch1-wrapper,.merch3-wrapper{
     display: flex;
-    width: 40%;
-    height: 100%;
-    margin: 2px;
+    width: 30%;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-right: 1px solid #141418;
+    background-color: #242529;
+}
+.merch1-wrapper{
+    padding-left: 4px;
     padding-right: 4px;
 }
+.merch3-wrapper{
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+
 .merch1{
+    margin: 5px;
     display: flex;
-    width: 90%;
-    height: 60%;
+    height: 90%;
     justify-content: center;
     align-items: center;
     background-color: #fffbe8;
+    width: 100%;
+    
 }
 .merch1 img{
     display: flex;
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 .merch1script{
     display: flex;
-    width: 90%;
-    height: 20%;
-    margin-top: 10px;
+    height: auto;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    border: 2px solid #141418;
-    background-color: #fffbe8;
+    margin: 4px;
+    background-color: blue;
+    width: 100%;
+   
 }
 .sub-title{
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: row;
     font-size: 32px;
-    border-bottom: 1px solid #141418;
-    margin-top: 10px;
+    background-color: #e5e4d2;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
 }
 .sub-text{
  display: flex;
  font-size: 18px;
- justify-content: center;
- text-align: center;
- margin-bottom: 10px;
+ background-color: #e5e4d2;
+ width: 100%;
+ height: auto;
 }
 .merch2script{
     display: flex;
-    width: 90%;
-    height: 20%;
-    margin-bottom: 10px;
+    height: auto;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    border: 2px solid #141418;
-    background-color: #fffbe8;
+    margin: 4px;
+    background-color: blue;
+    width: 100%;
+    
 }
 /* Add these styles to your external CSS file */
 
@@ -573,7 +593,7 @@ justify-content: center;
     position: fixed;
     cursor: pointer;
     top: 5%;
-    left: 70%;
+    left: 85%;
     z-index: 9999;
 }
 
@@ -584,19 +604,40 @@ justify-content: center;
 
 
 
-
+.page2
 
 .page5{
     display: flex;
-    justify-content: center;
     height: auto;
     width: 100%;
     color: #fffbe8;
-    background-color: #242529;
+    background-color: aqua;
+    padding: 20px;
     
 }
-
-
+.socialmedia{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+    flex-direction: row;
+    
+}
+.instagram-wrapper{
+    display: flex;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.website-wrapper {
+    display: flex;
+    background-color: teal;
+    height: 100px;
+    width: 100px;
+}
 .form-container{
     display: flex;
     width: 100%;
@@ -815,6 +856,7 @@ justify-content: center;
     .carousel-container {
         display: flex;
         width: 90%;
+        height: auto;
         background-color: #141418;
         overflow: hidden; /* Hide any overflow */
     }
@@ -860,7 +902,7 @@ justify-content: center;
         height: 5%;
         background-color: #141418;
         margin: 0;
-        margin-top: 100px;
+        margin-top: 20px;
     }
     .merch-title{
         font-size: 24px;
@@ -884,28 +926,55 @@ justify-content: center;
         justify-content: flex-start;
         padding: 10px;
         background-color: #242529;
+        flex-direction: column;
     }
     .merch2-wrapper{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
     .merch1{
         display: flex;
-    width: 80%;
+    width: 100%;
     height: 100%;
     justify-content: start;
     align-items: center;
     background-color: #fffbe8;
     }
+    .merch1script{
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
     .merch2script{
-        margin-top: 10px;
-        height: auto;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        
     }
     .sub-title{
-        font-size: 16px;
+        font-size: 26px;
+        font-weight: bold;
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
     .sub-text{
         font-size: 14px;
+        margin: 0;
+        padding: 0;
+        flex:1;
+        width: 100%;
+        text-align: center;
+        
     }
     .social-title{
         display: flex;
