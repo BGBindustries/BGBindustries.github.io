@@ -1011,6 +1011,7 @@ justify-content: center;
         height: 75%;
         margin-top: 10px;
         justify-content: center;
+        margin-left: 0;
     }
     .selfportrait{
         display:flex;
