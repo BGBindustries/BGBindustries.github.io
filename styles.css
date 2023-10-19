@@ -1051,7 +1051,7 @@ justify-content: center;
         z-index: 4;
     }
     .hiddenImage2 {
-        display: flex;
+        display: none;
         height: 200px;
         width: auto;
         position: absolute;
