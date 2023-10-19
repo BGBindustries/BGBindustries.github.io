@@ -100,6 +100,7 @@ body {
     color: #fffbe8;
     padding: 0;
     flex-direction: column;
+    position: relative;
     
 }
 .upper-container {
@@ -1072,9 +1073,9 @@ justify-content: center;
         z-index: 4;
     }
     .hiddenImage2 {
-        display: none;
-        height: 200px;
-        width: auto;
+        display: flex;
+        height: 100px;
+        width: 50px;
         position: absolute;
         bottom: 0%; /* Adjust bottom position */
         left: 0%; /* Adjust right position */
