@@ -86,6 +86,26 @@ body {
     color: #242524;
     flex-direction: column;
 }
+.socialpage{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    color: #fffbe8;
+}
+.instaicon{
+    justify-content: center;
+    text-align: center;
+}
+.webicon{
+    justify-content: center;
+    text-align: center;
+}
+.tiktokicon{
+    justify-content: center;
+    text-align: center;
+}
 .portraitscript-wrapper{
     display: flex;
     flex-direction: row;
