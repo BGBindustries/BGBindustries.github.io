@@ -1061,7 +1061,7 @@ justify-content: center;
         width: 50px;
         position: absolute;
         bottom: 0%; /* Adjust bottom position */
-        left: 0%; /* Adjust right position */
+        left: 20%; /* Adjust right position */
         
         justify-content: center;
     }
