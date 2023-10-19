@@ -1052,12 +1052,12 @@ justify-content: center;
         z-index: 4;
     }
     .hiddenImage2 {
-        display: none;
-        height: 300px;
+        display: flex;
+        height: 250px;
         width: auto;
         position: absolute;
         bottom: 0%; /* Adjust bottom position */
-        left: 20%; /* Adjust right position */
+        left: 10%; /* Adjust right position */
         
         justify-content: center;
     }
@@ -1135,7 +1135,7 @@ justify-content: center;
         height: 50px;
         position: fixed;
         top: 2%;
-        left: 50%;
+        left: 70%;
         z-index: 3;
         
     }
