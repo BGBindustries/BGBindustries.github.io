@@ -154,22 +154,7 @@ body {
     align-items: center;
 }
 
-.second-text::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('light-logo.png');
-    background-repeat: no-repeat;
-    opacity: 0.3; /* Adjust the opacity value as needed */
-}
 
-/* Set the z-index of the ::before pseudo-element to be lower than the text */
-.second-text::before {
-    z-index: 0;
-}
 
 .hiddenImage2 {
     display: flex;
@@ -1057,6 +1042,24 @@ justify-content: center;
     1px -1px 0 #252525,
     -1px 1px 0 #252525,
     1px 1px 0 #252525;
+    }
+    .second-text::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('light-logo.png');
+        background-repeat: no-repeat;
+        
+        background-size: contain;
+        opacity: 0.3; /* Adjust the opacity value as needed */
+    }
+    
+    /* Set the z-index of the ::before pseudo-element to be lower than the text */
+    .second-text::before {
+        z-index: 0;
     }
     .hiddenImage1 {
         display: flex;
