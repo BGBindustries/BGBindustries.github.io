@@ -255,7 +255,7 @@ body {
 }
 .page1script{
     display: flex;
-    height: 100%;
+    height: auto;
     width: 100%;
     margin-left: 10px;
     flex-direction: column;
@@ -263,6 +263,7 @@ body {
     border-top: 1px solid black;
     margin-top: auto;
     padding-top: 20px;
+    margin-bottom: 40px;
 }
 
 .script1,.script2{
@@ -285,7 +286,7 @@ body {
 }
 .serpent {
     display: flex;
-    height: 100%;
+    height: auto;
     width: auto;
     margin-top: auto;
     align-items: flex-end; /* Align items to the flex-end (bottom) */
@@ -1038,7 +1039,6 @@ justify-content: center;
         width: 100%;
         height: auto;
         justify-content: center;
-        
         flex-direction: column;
         margin-left: 0;
     }
@@ -1091,11 +1091,15 @@ justify-content: center;
         
     }
     .title2{
-        
-        font-size: 40px;
+        line-height: 1;
+        font-size: 60px;
+        margin-bottom: -63px;
+        margin-left: 30px;
     }
     .title1{
-        font-size: 30px;
+        font-size: 22px;
+        margin-left: 30px;
+        margin-bottom: -20px;
     }
     .half-box{
         align-items: start;
