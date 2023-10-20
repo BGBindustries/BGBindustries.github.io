@@ -1368,6 +1368,26 @@ justify-content: center;
     .floating-image1 img, .floating-image3 img{
         width: 150px;
     }
+    .contactme{
+        display: flex;
+    }
+    .contact-text{
+        display: block;
+        margin-right: 20px;
+    }
+    .section2-3wrap{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .section2,.section3{
+        width: 100%;
+    }
+    .wufoo{
+        width: 100%;
+    }
 }
 
 
