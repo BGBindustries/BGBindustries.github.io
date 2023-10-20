@@ -200,7 +200,29 @@ window.addEventListener('scroll', function() {
 
 
 
+/*highlight logo */
 
+document.addEventListener('DOMContentLoaded', function() {
+    const rotateLogo = document.getElementById('rotate-logo');
+    const defaultLogo = document.querySelector('.default-nico');
+    const lightLogo = document.querySelector('.light-nico');
+    const hoverLogo = document.querySelector('.hover-logo');
+
+    rotateLogo.addEventListener('mouseover', function() {
+        defaultLogo.style.display = 'none';
+        lightLogo.style.display = 'none';
+        hoverLogo.style.display = 'flex';
+    });
+
+    rotateLogo.addEventListener('mouseout', function() {
+        defaultLogo.style.display = 'block';
+        lightLogo.style.display = 'none';
+        hoverLogo.style.display = 'none';
+    });
+});
+
+
+/*highlight logo */
 
 
 
