@@ -503,7 +503,7 @@ justify-content: center;
 .merch-wrapper{
     display: flex;
     width: 100%;
-    height: auto;
+    height: 700px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -513,7 +513,7 @@ justify-content: center;
 .merch1-wrapper,.merch3-wrapper{
     display: flex;
     width: 30%;
-    height: 600px;
+    height: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -538,12 +538,15 @@ justify-content: center;
     background-color: #fffbe8;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .merch1 img {
-    display: block;
+    display: flex;
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
     transition: filter 0.3s; /* Add transition for the grayscale effect */
 }
