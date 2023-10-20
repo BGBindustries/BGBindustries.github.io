@@ -98,6 +98,26 @@ window.addEventListener('load', fadeInTitle1);
 /*slide function for old carousel */
 //
 
+function handleBackgroundOpacity() {
+    const imageContainer = document.querySelector('.second-text');
+    const imagePosition = imageContainer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    const fadeInPoint = windowHeight / 2 - 200; // Adjust the starting point for the effect
+    const fadeOutPoint = windowHeight / 2 + 250; // Adjust the ending point for the effect
+    const pseudoElement = imageContainer.style;
+
+    let opacity;
+
+    if (imagePosition > fadeInPoint && imagePosition < fadeOutPoint) {
+        opacity = 1 - (imagePosition - fadeInPoint) / (fadeOutPoint - fadeInPoint);
+        pseudoElement.setProperty('--background-opacity', opacity); // Set a custom CSS variable
+    } else {
+        pseudoElement.setProperty('--background-opacity', 1);
+    }
+}
+
+window.addEventListener('scroll', handleBackgroundOpacity);
 
 
 
@@ -190,27 +210,37 @@ window.addEventListener('scroll', function() {
 window.addEventListener('scroll', function() {
     const rotateLogo = document.querySelector('.rotate-logo');
     const page2 = document.querySelector('.page2');
+    const page3 = document.querySelector('.page3');
     const page4 = document.querySelector('.page4');
     
     const scrolled = window.scrollY;
     const normPic = document.querySelector('.default-nico');
     const lightPic = document.querySelector('.light-nico');
-    // Calculate the position of page2 and page4
-    const page2Position = page2.offsetTop + page2.offsetHeight;
+    const lightLogo = document.querySelector('.hiddenImage2 img'); // Add the hidden image element for the light logo
+    
+    // Calculate the position of page2, page3, and page4
+    const page2Position = page2.offsetTop;
+    const page3Position = page3.offsetTop;
     const page4Position = page4.offsetTop;
     
-    
-    if (scrolled > page2Position && scrolled < page4Position) {
-        // The rotate-logo is between the end of page 2 and the start of page 4
-        
+    if (scrolled >= page2Position && scrolled < page3Position) {
+        // The rotate-logo is between the start of page2 and the start of page3
         normPic.style.display = "none";
         lightPic.style.display = "flex";
+        lightLogo.style.display = "block"; // Show the hidden light logo
+    } else if (scrolled >= page3Position && scrolled < page4Position) {
+        // The rotate-logo is between the start of page3 and the start of page4
+        normPic.style.display = "none";
+        lightPic.style.display = "flex";
+        lightLogo.style.display = "block"; // Show the hidden light logo
     } else {
         // The rotate-logo is not in that range, remove background color
         normPic.style.display = "flex";
         lightPic.style.display = "none";
+        lightLogo.style.display = "none"; // Hide the light logo
     }
 });
+
 
 
 /*calendary space */
