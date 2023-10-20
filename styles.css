@@ -425,6 +425,7 @@ justify-content: center;
     text-align: center;
     align-items: center;
     justify-content: center;
+    letter-spacing: .5ch;
 }
 .tatimg{
     display: flex;
@@ -875,7 +876,7 @@ justify-content: center;
         width: 100%;
         height: 40%;
         z-index: 2;
-       
+        
     }
     .carousel-container {
         display: flex;
