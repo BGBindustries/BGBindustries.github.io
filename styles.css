@@ -65,19 +65,31 @@ body {
 }
 .rotate-logo {
     display: none;
-
+    transition: transform .5 ease;
     width: 100px;
     height: auto;
     z-index: 3;
     margin-left: auto;
     
 }
-
+.rotate-logo.open-menu{
+    transform: rotate(180deg);
+}
 .rotate-logo img {
     width: 100%; /* Make the image fill the container */
     height: 100%; /* Make the image fill the container */
     object-fit: contain;
     
+}
+.title1 {
+    color: inherit; /* Inherits the color from its parent element */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s; /* Adds a smooth color transition over 0.3 seconds */
+    
+}
+
+.title1:hover {
+    color: #FF5733; /* Change the color on hover (you can replace this with your desired color) */
 }
 
 .page1{
@@ -241,7 +253,7 @@ body {
     align-items: center;
     font-size: 25px;
     letter-spacing: .5ch;
-    margin: 0; /* Reset margin */
+    margin-bottom: -30px; /* Reset margin */
     padding: 10px;
     font-family: 'Crimson Text', serif;
     font-weight: bold;

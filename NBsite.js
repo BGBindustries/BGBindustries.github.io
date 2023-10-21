@@ -122,7 +122,7 @@ window.addEventListener('scroll', handleBackgroundOpacity);
 
 
 // NBsite.js
-
+/*click to open menu on rotate-logo */
 document.addEventListener('DOMContentLoaded', function() {
     var logo = document.getElementById("rotate-logo");
     var menu = document.getElementById("menu");
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+/*click to open menu on rotate-logo */
 
 
 /*carousel tests */
