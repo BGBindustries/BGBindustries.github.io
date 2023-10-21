@@ -1389,7 +1389,7 @@ justify-content: center;
     .title2{
         line-height: 1;
         font-size: 60px;
-        margin-bottom: -63px;
+        margin-bottom: 0;
         margin-left: 30px;
     }
     .title1{
