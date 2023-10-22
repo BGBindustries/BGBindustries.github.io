@@ -82,14 +82,29 @@ body {
     
 }
 .title1 {
-    color: inherit; /* Inherits the color from its parent element */
-    text-decoration: none; /* Removes underline */
-    transition: color 0.3s; /* Adds a smooth color transition over 0.3 seconds */
-    
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.title1 .default-img {
+    display: inline-block;
+}
+
+.title1 .hover-img {
+    display: none;
+}
+
+.title1:hover .default-img {
+    display: none;
+}
+
+.title1:hover .hover-img {
+    display: inline-block;
 }
 
 .title1:hover {
-    color: #FF5733; /* Change the color on hover (you can replace this with your desired color) */
+    color: #FF5733;
 }
 
 .page1{
@@ -586,11 +601,28 @@ justify-content: center;
     height: auto;
     object-fit: contain;
 }
-.merch-title{
-    display: flex;
-    font-size: 60px;
-    border-bottom: 1px solid #141418;
+.merch-title {
+    position: relative;
+    transition: transform 0.3s;
+    cursor: pointer;
 }
+
+.merch-title .default-img {
+    display: inline-block;
+}
+
+.merch-title .hover-img {
+    display: none;
+}
+
+.merch-title:hover .default-img {
+    display: none;
+}
+
+.merch-title:hover .hover-img {
+    display: inline-block;
+}
+
 .merch-wrapper{
     display: flex;
     width: 100%;
@@ -786,6 +818,18 @@ justify-content: center;
     color: #141414;
     align-items: center;
     justify-content: center;
+}
+.contactapp{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.contactapp img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 .section1,.section2,.section3,.section4,.section5{
     border-radius: 25px;
@@ -1446,14 +1490,14 @@ justify-content: center;
         margin-bottom: -2px;
     }
     .floating-image1{
-        top: 0%;
+        top: -10%;
         left: 50%;
     }
     .floating-image2{
         display: none;
     }
     .floating-image3{
-        top: -40%;
+        top: -50%;
         left: 20%;
     }
     .floating-image1 img, .floating-image3 img{
