@@ -177,7 +177,6 @@ body {
     width: 70%;
     height: auto;
     
-    
 }
 .about-title img{
     width: 100%;
@@ -1076,13 +1075,15 @@ justify-content: center;
     .carousel-container {
         display: flex;
         width: 90%;
-        height: 500px;
+        height: 400px;
         background-color: #141418;
         overflow: hidden; /* Hide any overflow */
     }
     
     .tatimg {
-        flex: 0 0 100%; /* Ensure each image takes full width */
+        justify-content: center;
+        align-items: center;
+        flex: 0 100% 100%; /* Ensure each image takes full width */
         transition: transform 0.5s; /* Add a smooth transition effect */
     }
     
@@ -1272,7 +1273,25 @@ justify-content: center;
     -1px 1px 0 #252525,
     1px 1px 0 #252525;
     }
-    
+    .about-wrap :first-child{
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-title{
+        display: flex;
+        width: 100%;
+        height: auto;
+        
+    }
+    .about-title img{
+        width: 100%;
+        max-width: 75%;
+        object-fit: contain;
+        margin: 0;
+    }
     .hiddenImage1 {
         display: flex;
         height: 150px;
@@ -1398,7 +1417,8 @@ justify-content: center;
         margin-bottom: -20px;
     }
     .half-box{
-        align-items: start;
+        align-items: center;
+
     }
     .half-title{
         font-size: 42px;
