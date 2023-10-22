@@ -269,4 +269,11 @@ window.addEventListener('scroll', function() {
 
 
 
-   
+document.addEventListener('DOMContentLoaded', function() {
+    const section2 = document.getElementById('section2');
+
+    section2.addEventListener('click', function() {
+        section2.classList.toggle('active');
+    });
+});
+ 

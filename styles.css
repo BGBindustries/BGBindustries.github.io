@@ -1505,7 +1505,7 @@ justify-content: center;
     }
     .contactme{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .contact-text{
         display: block;
@@ -1539,4 +1539,95 @@ justify-content: center;
     .hiddenImage2{
         display: none;
     }
+}
+
+
+/*   APPOINTMENT PAGE    */
+
+.section-container {
+    cursor: pointer;
+    background-color: #FF5733;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    width: 500px; /* Set your desired width */
+    transition: max-height 0.3s ease-out, min-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 500px; /* Set your desired expanded height */
+    min-height: 50px; /* Set your desired collapsed height */
+    position: relative; /* Added this line */
+}
+
+.section-title {
+    cursor: pointer;
+    position: relative; /* Added this line */
+}
+
+.section-title::after { /* Added this block */
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000; /* Adjust color as needed */
+}
+
+.section-content {
+    display: none;
+}
+
+.active .section-content {
+    display: block;
+}
+
+/* new app tests*/
+.accordion{
+    margin: 60px auto;
+    width: 600px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #e3edf7;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 10px 10px 20px;
+}
+.accordion input[type="radio"]:checked + label::before{
+    content: '-';
 }
