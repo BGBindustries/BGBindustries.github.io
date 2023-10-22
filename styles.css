@@ -1524,6 +1524,9 @@ justify-content: center;
     .wufoo{
         width: 100%;
     }
+
+    /*page appointments*/
+    
 }
 
 
@@ -1585,15 +1588,20 @@ justify-content: center;
 }
 
 /* new app tests*/
+.accordion-wrapper{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 .accordion{
-    margin: 60px auto;
-    width: 600px;
+    width: 90%;
 }
 .accordion li{
     list-style: none;
     width: 100%;
-    margin: 20px;
-    padding: 10px;
+    margin-bottom: 5px;
     border-radius: 10px;
     background: #e3edf7;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
@@ -1606,6 +1614,9 @@ justify-content: center;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+}
+ul{
+    padding: 0;
 }
 label::before{
     content: '+';
