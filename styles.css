@@ -1438,14 +1438,14 @@ justify-content: center;
         margin-bottom: -2px;
     }
     .floating-image1{
-        top: 210%;
+        top: 0%;
         left: 50%;
     }
     .floating-image2{
         display: none;
     }
     .floating-image3{
-        top: 250%;
+        top: -40%;
         left: 20%;
     }
     .floating-image1 img, .floating-image3 img{
