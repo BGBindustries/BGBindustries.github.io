@@ -132,7 +132,7 @@ body {
 .page2{
     display: flex;
     width: 100%;
-    height: 120vh;
+    height: auto;
     background-color: #242524;
     color: #fffbe8;
     padding: 0;
@@ -259,21 +259,23 @@ body {
 }
 .page1title {
     display: flex;
-    width: 75%;
-    height: auto;
-    margin-left: 40px;
+    width: 85%;
+    height: 40%;
+    margin-left: 100px;
     flex-direction: column;
     z-index: 2;
     margin-top: 20px;
     position: relative;
     top: 20px;
+    align-items: center;
+    margin-bottom: 0;
 }
 
 .title1 {
     opacity: 0;
     display: flex;
-    width: auto; /* Make sure titles take 100% width */
-    height: 50%;
+    width: 40%; /* Make sure titles take 100% width */
+    height: auto;
     align-items: center;
     font-size: 25px;
     letter-spacing: .5ch;
@@ -281,19 +283,23 @@ body {
     padding: 10px;
     font-family: 'Crimson Text', serif;
     font-weight: bold;
+    margin-bottom: 0;
+
 }
 .title2 {
     opacity: 0;
     display: flex;
-    width: 80%; /* Make sure titles take 100% width */
-    height: 100%;
+    width: 100%; /* Make sure titles take 100% width */
+    height: 70%;
     align-items: center;
-    font-size: 102px;
+    justify-content: center;
     letter-spacing: .5ch;
     margin: 0; /* Reset margin */
     padding: 10px;
     font-family: 'Crimson Text', serif;
     font-weight: bold;
+    margin-bottom: 0;
+
 }
 .title2{
     text-shadow: 
@@ -305,6 +311,13 @@ body {
 .title2 img{
     width: 100%;
     max-width: 75%;
+    max-height: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.title1 img{
+    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
 }
@@ -409,24 +422,15 @@ body {
     padding-bottom: 20px;
   }
   .img1,.img2,.img3{
-    width: 33%;
+    display: flex;
+    width: 30%;
     height: 100%;
     margin: 10px;
+    overflow: hidden;
   }
-  .img1{
-    background-image: url(hdtat.jpeg);
-    background-position: center;
-    background-size: cover;
-  }
-  .img2{
-    background-image: url(backpiece.png);
-    background-position: center;
-    background-size: cover;
-  }
-  .img3{
-    background-image: url(tat3.png);
-    background-position: center;
-    background-size: cover;
+  .img1 img,.img2 img,.img3 img{
+    width: 100%;
+    object-fit: cover;
   }
   .carousel-container {
     display: none;
@@ -1020,13 +1024,15 @@ justify-content: center;
     .menu {
         display: none;
         position: fixed;
-        background-color: #e5e4d2;
+        background-color: #fffbe8;
         min-width: 180px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
         top: 10%; /* Adjust the value to move the menu below the logo */
         left: 50%;
         z-index: 9999;
+        border-radius: 25px;
+        padding: 10px;
     }
     .page4 {
         height: auto;
@@ -1076,7 +1082,7 @@ justify-content: center;
     .carousel-container {
         display: flex;
         width: 90%;
-        height: 400px;
+        height: 550px;
         background-color: #141418;
         overflow: hidden; /* Hide any overflow */
     }
@@ -1086,17 +1092,19 @@ justify-content: center;
         align-items: center;
         flex: 0 100% 100%; /* Ensure each image takes full width */
         transition: transform 0.5s; /* Add a smooth transition effect */
+        overflow: hidden; /* Hide any overflow within the container */
     }
     
     .tatimg img {
-        width: 100%; /* Make the image fill the container */
-        height: auto; /* Make the image fill the container */
+        width: 100%;
+        height: 100%; /* Make the image fill the container */
         object-fit: cover; /* Ensure the image covers the entire container */
     }
     
     .active {
         transform: translateX(0); /* Show the active slide */
     }
+    
     
     .nav-buttons {
         display: flex;
@@ -1341,7 +1349,7 @@ justify-content: center;
     .page1{
         display: flex;
         width: auto;
-        height: 100vh;
+        height: auto;
         padding: 0;
         margin: 0;
         justify-content: center;
@@ -1409,13 +1417,13 @@ justify-content: center;
     .title2{
         line-height: 1;
         font-size: 60px;
-        margin-bottom: 0;
-        margin-left: 30px;
+        margin-bottom: 20px;
+        width: 100%;
     }
     .title1{
         font-size: 22px;
-        margin-left: 30px;
-        margin-bottom: -20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
     .half-box{
         align-items: center;
@@ -1477,7 +1485,7 @@ justify-content: center;
 
 @media screen and (max-height: 400px) {
     .page1,.page2,.page3,.page4,.socialmedia{
-        height: 300vh;
+        height: auto;
         width: auto;
         background-color: #242529;
     }
