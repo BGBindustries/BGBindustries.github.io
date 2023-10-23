@@ -362,6 +362,7 @@ body {
 }
 .appLink{
     display: flex;
+    opacity: 0;
 }
 .appLink img{
     max-width: 100%;
@@ -637,7 +638,7 @@ justify-content: center;
 .merch-title:hover .hover-img {
     display: inline-block;
 }
-.app-title .default-img {
+.title .default-img {
     display: flex;
 }
 .app-title .hover-img {

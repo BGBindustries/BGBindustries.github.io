@@ -78,9 +78,14 @@ function fadeInSerpent() {
     serpent.style.transition = 'opacity 2s'; // Add transition for a smooth fade-in effect
     serpent.style.opacity = '1';
 }
+function fadeInApps() {
+    let appTitle = document.querySelector('.appLink');
+    appTitle.style.transition = 'opacity 2s';
+    appTitle.style.opacity = '1'
+}
 
 // Delay the execution of fadeInSerpent after a certain amount of time (in milliseconds)
-setTimeout(fadeInSerpent, 4000); // Adjust the time delay as needed
+setTimeout(fadeInApps, 4000); // Adjust the time delay as needed
 
 // Delay the execution of fadeInPage1Script after a certain amount of time (in milliseconds)
 setTimeout(fadeInPage1Script, 3000); // Adjust the time delay as needed
