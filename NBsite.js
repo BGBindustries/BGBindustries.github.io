@@ -123,18 +123,7 @@ window.addEventListener('scroll', handleBackgroundOpacity);
 
 // NBsite.js
 /*click to open menu on rotate-logo */
-document.addEventListener('DOMContentLoaded', function() {
-    var logo = document.getElementById("rotate-logo");
-    var menu = document.getElementById("menu");
 
-    logo.addEventListener('click', function() {
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
-    });
-});
 
 /*click to open menu on rotate-logo */
 
@@ -202,24 +191,7 @@ window.addEventListener('scroll', function() {
 
 /*highlight logo */
 
-document.addEventListener('DOMContentLoaded', function() {
-    const rotateLogo = document.getElementById('rotate-logo');
-    const defaultLogo = document.querySelector('.default-nico');
-    const lightLogo = document.querySelector('.light-nico');
-    const hoverLogo = document.querySelector('.hover-logo');
 
-    rotateLogo.addEventListener('mouseover', function() {
-        defaultLogo.style.display = 'none';
-        lightLogo.style.display = 'none';
-        hoverLogo.style.display = 'flex';
-    });
-
-    rotateLogo.addEventListener('mouseout', function() {
-        defaultLogo.style.display = 'block';
-        lightLogo.style.display = 'none';
-        hoverLogo.style.display = 'none';
-    });
-});
 
 
 /*highlight logo */

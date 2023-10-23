@@ -363,6 +363,12 @@ body {
 .appLink{
     display: flex;
 }
+.appLink img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+}
 .page1script{
     display: flex;
     height: auto;
@@ -631,7 +637,18 @@ justify-content: center;
 .merch-title:hover .hover-img {
     display: inline-block;
 }
-
+.app-title .default-img {
+    display: flex;
+}
+.app-title .hover-img {
+    display: none;
+}
+.app-title:hover .default-img{
+    display: none;
+}
+.app-title:hover .hover-img{
+    display: flex;
+}
 .merch-wrapper{
     display: flex;
     width: 100%;
@@ -834,9 +851,10 @@ justify-content: center;
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .contactapp img{
-    max-width: 100%;
+    max-width: 70%;
     max-height: 100%;
     object-fit: contain;
 }
@@ -926,6 +944,7 @@ justify-content: center;
 .wufoo{
     margin-left: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     border-radius: 25px;
     width: 50%;
@@ -1296,10 +1315,10 @@ justify-content: center;
     body {
         background-size: contain;
         background-position: center;
-        background-color: #141418;
+        background-color: #fffbe8;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-image: url('backgroundIDEA.png');
+        background-image: none;
         
     }
     .portraitscript-wrapper{
@@ -1308,7 +1327,8 @@ justify-content: center;
         height: 75%;
         margin-top: 10px;
         justify-content: center;
-        margin-left: 0;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .selfportrait{
         display:flex;
@@ -1525,6 +1545,9 @@ justify-content: center;
         display: flex;
         flex-direction: column-reverse;
     }
+    .contactapp img{
+        max-width: 90%;
+    }
     .contact-text{
         display: block;
         margin-right: 20px;
@@ -1625,8 +1648,7 @@ justify-content: center;
     margin-bottom: 5px;
     border-radius: 10px;
     background: #e3edf7;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.3);
 }
 .accordion li label{
     display: flex;
@@ -1649,7 +1671,7 @@ input[type="radio"]{
     display: none;
 }
 .accordion .content{
-    color: #555;
+    color: #242529;
     padding: 0 10px;
     line-height: 26px;
     max-height: 0;
