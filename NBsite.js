@@ -299,11 +299,20 @@ document.addEventListener("DOMContentLoaded", function () {
         lightboxImage.src = images[index].src;
         currentImageIndex = index;
         updateImageIndexText();
+
+        // Add a click event listener to the lightbox itself to close it when clicked
+        lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
     }
 
     // Function to close the lightbox
     function closeLightbox() {
         lightbox.style.display = "none";
+        // Remove the click event listener on the lightbox to prevent multiple bindings
+        lightbox.removeEventListener("click", closeLightbox);
     }
 
     // Function to update the image index text
