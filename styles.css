@@ -1887,9 +1887,8 @@ input[type="radio"]{
     justify-content: center;
     text-align: center;
     font-size: 42px;
-    padding: 20px;
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 .photo-gallery{
     display: flex;
