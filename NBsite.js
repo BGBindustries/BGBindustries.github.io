@@ -279,6 +279,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//FULL GALLERY 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.querySelector(".photo-gallery");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const closeBtn = document.getElementById("close");
+
+    gallery.addEventListener("click", (e) => {
+        if (e.target.tagName === "IMG") {
+            lightbox.style.display = "block";
+            lightboxImage.src = e.target.src;
+        }
+    });
+
+    closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+});
 
 
  
