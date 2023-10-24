@@ -286,18 +286,54 @@ document.addEventListener("DOMContentLoaded", function () {
     const lightbox = document.getElementById("lightbox");
     const lightboxImage = document.getElementById("lightbox-image");
     const closeBtn = document.getElementById("close");
+    const nextBtn = document.getElementById("next");
+    const prevBtn = document.getElementById("prev");
+    const imageIndexText = document.getElementById("image-index");
+    const images = document.querySelectorAll(".photo-gallery img");
 
+    let currentImageIndex = 0;
+
+    // Function to open the lightbox with a specific image
+    function openLightbox(index) {
+        lightbox.style.display = "block";
+        lightboxImage.src = images[index].src;
+        currentImageIndex = index;
+        updateImageIndexText();
+    }
+
+    // Function to close the lightbox
+    function closeLightbox() {
+        lightbox.style.display = "none";
+    }
+
+    // Function to update the image index text
+    function updateImageIndexText() {
+        imageIndexText.textContent = (currentImageIndex + 1) + " / " + images.length;
+    }
+
+    // Event listener for opening the lightbox
     gallery.addEventListener("click", (e) => {
         if (e.target.tagName === "IMG") {
-            lightbox.style.display = "block";
-            lightboxImage.src = e.target.src;
+            openLightbox(Array.from(images).indexOf(e.target));
         }
     });
 
-    closeBtn.addEventListener("click", () => {
-        lightbox.style.display = "none";
+    // Event listeners for next and previous buttons
+    nextBtn.addEventListener("click", () => {
+        if (currentImageIndex < images.length - 1) {
+            openLightbox(currentImageIndex + 1);
+        }
     });
+
+    prevBtn.addEventListener("click", () => {
+        if (currentImageIndex > 0) {
+            openLightbox(currentImageIndex - 1);
+        }
+    });
+
+    // Event listener for closing the lightbox
+    closeBtn.addEventListener("click", closeLightbox);
+
+    // Initialize the image index text
+    updateImageIndexText();
 });
-
-
- 

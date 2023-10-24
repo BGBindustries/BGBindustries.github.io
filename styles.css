@@ -1963,3 +1963,23 @@ input[type="radio"]{
     cursor: pointer;
     color: #fff;
 }
+/* Lightbox navigation items */
+.lightbox-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background color */
+}
+
+.lightbox-prev,
+.lightbox-next {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333; /* Change the color to your desired light color */
+}
+
+.image-index {
+    font-size: 18px;
+    color: #333; /* Change the color to your desired light color */
+}
