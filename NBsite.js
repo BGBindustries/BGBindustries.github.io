@@ -299,20 +299,11 @@ document.addEventListener("DOMContentLoaded", function () {
         lightboxImage.src = images[index].src;
         currentImageIndex = index;
         updateImageIndexText();
-
-        // Add a click event listener to the lightbox itself to close it when clicked
-        lightbox.addEventListener("click", (e) => {
-            if (e.target === lightbox) {
-                closeLightbox();
-            }
-        });
     }
 
     // Function to close the lightbox
     function closeLightbox() {
         lightbox.style.display = "none";
-        // Remove the click event listener on the lightbox to prevent multiple bindings
-        lightbox.removeEventListener("click", closeLightbox);
     }
 
     // Function to update the image index text
@@ -328,13 +319,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Event listeners for next and previous buttons
-    nextBtn.addEventListener("click", () => {
+    nextBtn.addEventListener("click", (e) => {
+        e.stopPropagation(); // Prevent the click from closing the lightbox
         if (currentImageIndex < images.length - 1) {
             openLightbox(currentImageIndex + 1);
         }
     });
 
-    prevBtn.addEventListener("click", () => {
+    prevBtn.addEventListener("click", (e) => {
+        e.stopPropagation(); // Prevent the click from closing the lightbox
         if (currentImageIndex > 0) {
             openLightbox(currentImageIndex - 1);
         }
@@ -342,6 +335,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event listener for closing the lightbox
     closeBtn.addEventListener("click", closeLightbox);
+
+    // Add a click event listener to the lightbox itself to close it when clicked outside the image
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
 
     // Initialize the image index text
     updateImageIndexText();
