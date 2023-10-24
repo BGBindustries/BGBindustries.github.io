@@ -163,16 +163,24 @@ document.addEventListener('DOMContentLoaded', function() {
         autoRotateTimer = setTimeout(rotateSlides, 5000);
     }
 
-    document.querySelector('.nav-button-right').addEventListener('click', nextSlide);
-    document.querySelector('.nav-button-left').addEventListener('click', prevSlide);
-
     function rotateSlides() {
+        if (!autoRotateTimer) return; // Check if auto-rotate is paused
         nextSlide();
         resetAutoRotateTimer();
     }
 
+    document.querySelector('.nav-button-right').addEventListener('click', nextSlide);
+    document.querySelector('.nav-button-left').addEventListener('click', prevSlide);
+
+    document.querySelector('.nav-button-pause').addEventListener('click', function() {
+        autoRotateTimer = autoRotateTimer ? null : setTimeout(rotateSlides, 5000);
+        // Toggle the autoRotateTimer (pause/unpause)
+        console.log('Pause button clicked');
+    });
+
     autoRotateTimer = setTimeout(rotateSlides, 5000);
 });
+
 
 /*test for floating image rotation */
 window.addEventListener('scroll', function() {
