@@ -138,6 +138,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentSlide = 0;
     const tatimgs = document.querySelectorAll('.tatimg, .tatimg1, .tatimg2, .tatimg3');
     let autoRotateTimer;
+    let isPaused = false;
+    let playButton = document.querySelector('.play-button');
+    let pauseButton = document.querySelector('.nav-button-pause');
 
     function showSlide(index) {
         tatimgs.forEach(img => img.style.display = 'none');
@@ -147,24 +150,23 @@ document.addEventListener('DOMContentLoaded', function() {
     function nextSlide() {
         currentSlide = (currentSlide + 1) % tatimgs.length;
         showSlide(currentSlide);
-        console.log('Next slide clicked');
         resetAutoRotateTimer();
     }
 
     function prevSlide() {
         currentSlide = (currentSlide - 1 + tatimgs.length) % tatimgs.length;
         showSlide(currentSlide);
-        console.log('Previous slide clicked');
         resetAutoRotateTimer();
     }
 
     function resetAutoRotateTimer() {
         clearInterval(autoRotateTimer);
-        autoRotateTimer = setTimeout(rotateSlides, 5000);
+        if (!isPaused) {
+            autoRotateTimer = setTimeout(rotateSlides, 5000);
+        }
     }
 
     function rotateSlides() {
-        if (!autoRotateTimer) return; // Check if auto-rotate is paused
         nextSlide();
         resetAutoRotateTimer();
     }
@@ -172,13 +174,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.nav-button-right').addEventListener('click', nextSlide);
     document.querySelector('.nav-button-left').addEventListener('click', prevSlide);
 
-    document.querySelector('.nav-button-pause').addEventListener('click', function() {
-        autoRotateTimer = autoRotateTimer ? null : setTimeout(rotateSlides, 5000);
-        // Toggle the autoRotateTimer (pause/unpause)
-        console.log('Pause button clicked');
+    pauseButton.addEventListener('click', function() {
+        isPaused = true;
+        pauseButton.style.display = 'none';
+        playButton.style.display = 'flex';
+        clearInterval(autoRotateTimer);
     });
 
-    autoRotateTimer = setTimeout(rotateSlides, 5000);
+    playButton.addEventListener('click', function() {
+        isPaused = false;
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'flex';
+        resetAutoRotateTimer();
+    });
 });
 
 
@@ -214,7 +222,7 @@ window.addEventListener('scroll', function() {
 
 /*page 3 whtie box for rotating logo */
 /*delete later if Nico doesnt like */
-window.addEventListener('scroll', function() {
+/* window.addEventListener('scroll', function() {
     const rotateLogo = document.querySelector('.rotate-logo');
     const page2 = document.querySelector('.page2');
     const page3 = document.querySelector('.page3');
@@ -246,7 +254,7 @@ window.addEventListener('scroll', function() {
         lightPic.style.display = "none";
         lightLogo.style.display = "none"; // Hide the light logo
     }
-});
+}); */
 
 
 
