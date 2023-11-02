@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <script src="NBsite.js"></script>
+
+    <link rel="stylesheet" href="styles.css"> <!-- You can link a separate CSS file here for styling -->
+</head>
+<body>
+  <div class="hamburger" id="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+
+<!-- Sidebar Navigation -->
+<div class="sidebar" id="sidebar">
+    <a href="index.html">HOME</a>
+    <a href="appointments.html">APPOINTMENTS</a>
+    <a href="gallery.html">GALLERY</a>
+    <div class="side-logo"><img src="nbLOGO.png" alt=""></div>
+</div>
+<div class="rotate-wrapper">
+        
+  <a href="index.html" class="rotate-logo" id="rotate-logo" class="default-logo">
+      <img class="default-nico" src="nbLOGO (1).png" >
+      <img class="light-nico" src="light-logo.png" style="display: none;">
+  </a>
+</div>
+
+<!-- page start -->
+
+    <div class="gallerytitle">GALLERIA</div>
+    <div class="photo-gallery">
+    <div class="row">
+        <div class="column">
+          <img src="gallery1.JPG">
+          <img src="gallery2.JPG">
+          <img src="gallery3.JPG">
+          <img src="gallery4.JPG">
+          <img src="gallery6.JPG">
+          <img src="gallery7.JPG">
+          <img src="gallery8.JPG">
+        </div>
+        <div class="column">
+          <img src="gallery9.JPG">
+          <img src="gallery8.JPG">
+          <img src="gallery7.JPG">
+          <img src="gallery6.JPG">
+          <img src="gallery4.JPG">
+          <img src="gallery3.JPG">
+        </div>
+        <div class="column">
+          <img src="gallery2.JPG">
+          <img src="gallery7.JPG">
+          <img src="gallery3.JPG">
+          <img src="gallery4.JPG">
+          <img src="gallery6.JPG">
+          <img src="gallery3.JPG">
+          <img src="gallery7.JPG">
+        </div>
+        <div class="column">
+          <img src="gallery1.JPG">
+          <img src="gallery2.JPG">
+          <img src="gallery3.JPG">
+          <img src="gallery4.JPG">
+          <img src="gallery6.JPG">
+          <img src="gallery7.JPG">
+        </div>
+      </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close" id="close">&times;</span>
+      <img id="lightbox-image" class="lightbox-content">
+      <div class="lightbox-nav">
+          <span id="prev" class="lightbox-prev">&#9665;</span>
+          <p id="image-index" class="image-index"></p>
+          <span id="next" class="lightbox-next">&#9655;</span>
+          
+      </div>
+  </div>
+  
+    
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+    
+</body>
+</html>
