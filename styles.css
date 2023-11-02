@@ -225,6 +225,7 @@ body {
     height: auto;
     flex-direction: column;
     margin-top: 10px;
+    
 }
 .about-wrap :first-child{
     margin-left: 20px;
@@ -249,6 +250,8 @@ body {
     align-items: center;
     margin-bottom: 60px;
     margin-left: 10px;
+    letter-spacing: .2ch;
+    line-height: 1.5;
 }
 
 
